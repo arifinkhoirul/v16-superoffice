@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "First Office - work form anything",
     description: "boost your mood to work your job",
-    url: "http://localhost:3000/",
+    url: "https://superofficeirul.vercel.app/",
     siteName: "First Office",
     images: [
       {

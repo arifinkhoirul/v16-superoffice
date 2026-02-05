@@ -29,10 +29,10 @@ import { off } from 'process'
         }
     }
 
-    const fullImageUrl = office.image.startsWith("http") ? office.image : `https://yourdomain.com${office.image}`
+    const fullImageUrl = office.image.startsWith("http") ? office.image : `https://superofficeirul.vercel.app/${office.image}`
 
     return {
-    metadataBase: new URL("https://yourdomain.com"),
+    metadataBase: new URL("https://superofficeirul.vercel.app/"),
     title: {
         absolute: `${office.title} - Office`
     },
@@ -49,7 +49,7 @@ import { off } from 'process'
         images: [fullImageUrl]
         },
     alternates: {
-        canonical: `https://yourdomain.com/city/${slug}`
+        canonical: `https://superofficeirul.vercel.app/city/${slug}`
         },
     }
 }

@@ -38,10 +38,10 @@ import { Metadata } from 'next';
         }
     }
 
-    const fullImageUrl = city.image.startsWith("http") ? city.image : `https://yourdomain.com${city.image}`
+    const fullImageUrl = city.image.startsWith("http") ? city.image : `https://superofficeirul.vercel.app/${city.image}`
 
     return {
-    metadataBase: new URL("https://yourdomain.com"),
+    metadataBase: new URL("https://superofficeirul.vercel.app/"),
     title: {
         absolute: `${city.name} - Office`
     },
@@ -58,7 +58,7 @@ import { Metadata } from 'next';
         images: [fullImageUrl]
         },
     alternates: {
-        canonical: `https://yourdomain.com/city/${slug}`
+        canonical: `https://superofficeirul.vercel.app/city/${slug}`
         },
     }
 }
